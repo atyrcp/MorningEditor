@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MorningEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vze-2C-4sF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.98235343509999995" green="0.97610663409999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BWq-qw-XFv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="211"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-31-zx1" customClass="SlidableMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="字型">
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name=".PingFangTC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIz-U5-TNL"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="rLQ-QD-law" customClass="FontButtonContainerView" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="27" width="414" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-el-8e8" customClass="SlidableMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="27"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="顏色">
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name=".PingFangTC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2P-OS-WpG"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="oQL-QJ-H8L" customClass="ColorButtonContainerView" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="414" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-9N-3Vy" customClass="SlidableMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154" width="414" height="27"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="大小">
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name=".PingFangTC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AxM-S6-xNT"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-CA-Dnu" customClass="SizeSlider" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="181" width="418" height="31"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeTextValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="K35-d6-tb7"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Dhl-XK-7mf">
+                                <rect key="frame" x="20" y="263" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH1-Hj-eD6" customClass="RoundedMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="30"/>
+                                        <state key="normal" title="新增文字"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="changeColorState">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="createTextLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ljg-m9-lvV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-A9-eTD" customClass="ColorModeButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="30"/>
+                                        <state key="normal" title="文字顏色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="changeColorState">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeColorMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ylf-6t-1Qt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yym-d8-6nX" customClass="ColorModeButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="30"/>
+                                        <state key="normal" title="文字外框"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="changeColorState">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeColorMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGx-0J-Vr3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8l-Y0-G4o" customClass="ColorModeButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="30"/>
+                                        <state key="normal" title="文字陰影"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="changeColorState">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeColorMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIM-Ed-5FI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-4I-GJQ">
+                                <rect key="frame" x="20" y="627" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WT-eh-V7c" customClass="RoundedMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                        <state key="normal" title="重置圖片"/>
+                                        <connections>
+                                            <action selector="resetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tFC-Mg-jMn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0u-7K-0Qa" customClass="RoundedMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="191" y="0.0" width="183" height="30"/>
+                                        <state key="normal" title="儲存圖片"/>
+                                        <connections>
+                                            <action selector="saveImageToAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f83-oz-8aK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51q-FI-68v" customClass="RoundedMainButton" customModule="MorningEditor" customModuleProvider="target">
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <state key="normal" title="開啟相簿"/>
+                                <connections>
+                                    <action selector="selectImageFromAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agn-as-dUh"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="752" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dpZ-4Q-2xe">
+                                <rect key="frame" x="0.0" y="665" width="414" height="159"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="aM3-aW-mfD"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cell" id="OVG-Pm-DG6" customClass="ImageCollectionViewCell" customModule="MorningEditor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="187"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="188" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpn-4A-C9C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="188" height="187"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xpn-4A-C9C" secondAttribute="trailing" id="3GS-OG-Pgt"/>
+                                            <constraint firstItem="xpn-4A-C9C" firstAttribute="top" secondItem="OVG-Pm-DG6" secondAttribute="top" id="Dht-P9-hbs"/>
+                                            <constraint firstAttribute="bottom" secondItem="xpn-4A-C9C" secondAttribute="bottom" id="kYk-8N-PL1"/>
+                                            <constraint firstItem="xpn-4A-C9C" firstAttribute="leading" secondItem="OVG-Pm-DG6" secondAttribute="leading" id="l4l-ui-Dos"/>
+                                        </constraints>
+                                        <size key="customSize" width="188" height="187"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="xpn-4A-C9C" id="jHM-OB-zAz"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jLH-eT-vKL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vsQ-vH-3wK"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="374" translatesAutoresizingMaskIntoConstraints="NO" id="Veg-rJ-Uhc">
+                                <rect key="frame" x="20" y="301" width="374" height="318"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dhl-XK-7mf" firstAttribute="top" secondItem="BWq-qw-XFv" secondAttribute="bottom" constant="8" symbolic="YES" id="04R-Kf-NCW"/>
+                            <constraint firstItem="dpZ-4Q-2xe" firstAttribute="height" secondItem="Veg-rJ-Uhc" secondAttribute="height" multiplier="0.5" id="5jw-Kd-PLL"/>
+                            <constraint firstItem="Veg-rJ-Uhc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7E9-Zo-j5M"/>
+                            <constraint firstItem="CUm-4I-GJQ" firstAttribute="top" secondItem="Veg-rJ-Uhc" secondAttribute="bottom" constant="8" symbolic="YES" id="7Os-58-KMO"/>
+                            <constraint firstAttribute="trailing" secondItem="51q-FI-68v" secondAttribute="trailing" constant="20" symbolic="YES" id="AeK-f1-Dgh"/>
+                            <constraint firstAttribute="trailing" secondItem="CUm-4I-GJQ" secondAttribute="trailing" constant="20" symbolic="YES" id="B7q-sE-f1e"/>
+                            <constraint firstItem="51q-FI-68v" firstAttribute="top" secondItem="dpZ-4Q-2xe" secondAttribute="bottom" constant="8" symbolic="YES" id="EOa-9I-cFP"/>
+                            <constraint firstItem="dpZ-4Q-2xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hvu-he-gWU"/>
+                            <constraint firstItem="Dhl-XK-7mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Ipr-hQ-IHn"/>
+                            <constraint firstItem="Veg-rJ-Uhc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="RQj-Mi-kyx"/>
+                            <constraint firstItem="dpZ-4Q-2xe" firstAttribute="top" secondItem="CUm-4I-GJQ" secondAttribute="bottom" constant="8" symbolic="YES" id="VR1-N6-95L"/>
+                            <constraint firstItem="vze-2C-4sF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ysc-aa-4AO"/>
+                            <constraint firstItem="vze-2C-4sF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIB-2Z-mC3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Veg-rJ-Uhc" secondAttribute="trailing" constant="20" symbolic="YES" id="ep4-xM-nrC"/>
+                            <constraint firstItem="BWq-qw-XFv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gRN-Pc-5Ti"/>
+                            <constraint firstItem="51q-FI-68v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="hyv-ug-T9R"/>
+                            <constraint firstItem="BWq-qw-XFv" firstAttribute="top" secondItem="vze-2C-4sF" secondAttribute="bottom" id="iKV-VA-cFH"/>
+                            <constraint firstItem="vze-2C-4sF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lV4-f5-vtR"/>
+                            <constraint firstAttribute="trailing" secondItem="BWq-qw-XFv" secondAttribute="trailing" id="mdU-0J-cYu"/>
+                            <constraint firstItem="51q-FI-68v" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pev-lb-Utc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpZ-4Q-2xe" secondAttribute="trailing" id="qn1-iY-dgf"/>
+                            <constraint firstItem="Veg-rJ-Uhc" firstAttribute="top" secondItem="Dhl-XK-7mf" secondAttribute="bottom" constant="8" symbolic="YES" id="rNE-lt-nLY"/>
+                            <constraint firstItem="CUm-4I-GJQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="rZ4-9H-0J3"/>
+                            <constraint firstItem="BWq-qw-XFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rbI-v0-Fwq"/>
+                            <constraint firstAttribute="trailing" secondItem="Dhl-XK-7mf" secondAttribute="trailing" constant="20" symbolic="YES" id="s9e-Mg-D1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionview" destination="dpZ-4Q-2xe" id="1mO-pO-CII"/>
+                        <outlet property="colorButtonContainerView" destination="oQL-QJ-H8L" id="DCb-X3-SO3"/>
+                        <outlet property="colorMenuButton" destination="oCd-el-8e8" id="aCu-pK-uJo"/>
+                        <outlet property="fontButtonContainerView" destination="rLQ-QD-law" id="1gF-c7-rHj"/>
+                        <outlet property="fontMenuButton" destination="ifj-31-zx1" id="yu6-gz-nVr"/>
+                        <outlet property="imageView" destination="Veg-rJ-Uhc" id="Qu1-dD-vmz"/>
+                        <outlet property="shouldSlideLayoutConstraint" destination="04R-Kf-NCW" id="Pxe-rL-s2q"/>
+                        <outlet property="sizeMenuButton" destination="ucz-9N-3Vy" id="GVE-I1-HzZ"/>
+                        <outlet property="sizeSlider" destination="Lkr-CA-Dnu" id="kDp-ak-Lzo"/>
+                        <outlet property="slideViewsStackView" destination="BWq-qw-XFv" id="Cr3-5U-3dg"/>
+                        <outlet property="topBlankView" destination="vze-2C-4sF" id="mcp-c1-0au"/>
+                        <outletCollection property="colorModeButtons" destination="fFE-A9-eTD" collectionClass="NSMutableArray" id="5Yf-8o-xXd"/>
+                        <outletCollection property="colorModeButtons" destination="yym-d8-6nX" collectionClass="NSMutableArray" id="thh-Gv-iiv"/>
+                        <outletCollection property="colorModeButtons" destination="t8l-Y0-G4o" collectionClass="NSMutableArray" id="ouR-Ys-loP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>
