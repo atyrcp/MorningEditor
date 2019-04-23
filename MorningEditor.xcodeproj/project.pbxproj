@@ -30,10 +30,10 @@
 		9371D65A226A088700A5FA9D /* wt009.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9371D650226A088500A5FA9D /* wt009.ttf */; };
 		9371D65B226A088700A5FA9D /* WCL-05.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9371D651226A088700A5FA9D /* WCL-05.ttf */; };
 		9371D65C226A088700A5FA9D /* wts47.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9371D652226A088700A5FA9D /* wts47.ttf */; };
-		9371D65D226A088700A5FA9D /* WCL-03.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9371D653226A088700A5FA9D /* WCL-03.ttf */; };
 		9379FBD3225796CE00B62973 /* TextableLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379FBD2225796CE00B62973 /* TextableLabelView.swift */; };
 		9379FBD5225B71E100B62973 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379FBD4225B71E100B62973 /* ImageCollectionViewCell.swift */; };
 		93A22EEE226B3114000DC3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A22EED226B3114000DC3BD /* Assets.xcassets */; };
+		93B4E740226EEFBC00A75058 /* WCL-03.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93B4E73F226EEFBC00A75058 /* WCL-03.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,10 +62,10 @@
 		9371D650226A088500A5FA9D /* wt009.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wt009.ttf; sourceTree = "<group>"; };
 		9371D651226A088700A5FA9D /* WCL-05.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WCL-05.ttf"; sourceTree = "<group>"; };
 		9371D652226A088700A5FA9D /* wts47.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wts47.ttf; sourceTree = "<group>"; };
-		9371D653226A088700A5FA9D /* WCL-03.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WCL-03.ttf"; path = "../../201402171232540/WCL-03.ttf"; sourceTree = "<group>"; };
 		9379FBD2225796CE00B62973 /* TextableLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextableLabelView.swift; sourceTree = "<group>"; };
 		9379FBD4225B71E100B62973 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		93A22EED226B3114000DC3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B4E73F226EEFBC00A75058 /* WCL-03.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WCL-03.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				934AF70A224A070A00E95832 /* Main.storyboard */,
-				9379FBD4225B71E100B62973 /* ImageCollectionViewCell.swift */,
 				934AF7362250FCA800E95832 /* ButtonContainerView.swift */,
 				934AF73C2252713200E95832 /* AttributedButton.swift */,
+				9379FBD4225B71E100B62973 /* ImageCollectionViewCell.swift */,
 				934AF73A2252710900E95832 /* AttributedSlider.swift */,
 				934AF73E2254C45800E95832 /* AttributedLabel.swift */,
 				9379FBD2225796CE00B62973 /* TextableLabelView.swift */,
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				9371D64B226A088500A5FA9D /* WCL-02.ttf */,
-				9371D653226A088700A5FA9D /* WCL-03.ttf */,
+				93B4E73F226EEFBC00A75058 /* WCL-03.ttf */,
 				9371D651226A088700A5FA9D /* WCL-05.ttf */,
 				9371D64A226A088500A5FA9D /* WCL-07.ttf */,
 				9371D64F226A088500A5FA9D /* wt002.ttf */,
@@ -236,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9371D65D226A088700A5FA9D /* WCL-03.ttf in Resources */,
 				9371D65A226A088700A5FA9D /* wt009.ttf in Resources */,
 				9371D655226A088700A5FA9D /* WCL-02.ttf in Resources */,
 				9371D656226A088700A5FA9D /* wt021.ttf in Resources */,
@@ -245,6 +244,7 @@
 				93A22EEE226B3114000DC3BD /* Assets.xcassets in Resources */,
 				9371D657226A088700A5FA9D /* wts11.ttf in Resources */,
 				9371D654226A088700A5FA9D /* WCL-07.ttf in Resources */,
+				93B4E740226EEFBC00A75058 /* WCL-03.ttf in Resources */,
 				934AF711224A070B00E95832 /* LaunchScreen.storyboard in Resources */,
 				9371D65B226A088700A5FA9D /* WCL-05.ttf in Resources */,
 				934AF70C224A070A00E95832 /* Main.storyboard in Resources */,

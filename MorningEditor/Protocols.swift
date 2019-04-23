@@ -88,12 +88,10 @@ extension Pinchable where Self: UIView {
     }
 }
 
-// the object which conform to this protocol is responsible for handling the event (normally a tap event)
+// the object which conform to this protocol is responsible for handling the event (normally a tap event triggered by ViewInteractable protocol)
 protocol GestureRespondDelegate: class {
     func didSelect(in view: GestureRespondable, for event: GestureEvent)
 }
-
-
 
 protocol Highlightable {
     func shouldBeHighlighted()
