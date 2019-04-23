@@ -11,17 +11,17 @@
 * 若為 TextableLabelView 物件，表示其為使用者正在編輯的文字方框，則設定其為更改顏色、大小的目標
 * 若為特定 Buttons，則傳送該 Button 的資訊，並決定對象 TextableLabelView 應該更改的屬性
 
-![](App Overview.001.jpeg)
+![](/App Overview.001.jpeg)
 
 ## 元件繼承關係與位置：
 主要元件的繼承關係與其在 App 中的位置
 * 粉紅色的 MainButton 系列因線條混亂，便不逐一指出其在 App 中的位置
 * 只有單一數量的元件如 Slider 也不再另外畫線條指示位置
 
-![](App Overview.002.jpeg)
+![](/App Overview.002.jpeg)
 
 ## Protocol概述：
 App 中的核心 Protocol 資訊
 * 功能較簡單易懂的 Pannable, Pinchable 表格中未列出
 
-![](App Overview.003.jpeg)
+![](/App Overview.003.jpeg)
